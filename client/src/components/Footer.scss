@@ -1,0 +1,63 @@
+.footer{
+      display: flex;
+      flex-direction: row;
+      
+      justify-content: space-between;
+       height: 80px;
+       align-items: center;
+       background-color:   rgb(236, 197, 122);
+       width: 100vw;
+
+    .PaymentMethods{
+          
+
+        .topic{
+            text-align: center;
+            text-decoration-thickness: 10px;
+            margin-top: 10px;
+            
+             
+             
+        }
+
+        .images{
+
+            margin: 3px;
+
+            .img{
+                height: 40px;
+                width: 60px;
+                margin: 10px;
+                
+            }
+            
+        }
+
+        
+    }
+
+    .details{
+        
+    }
+    .followUs{
+        align-items: flex-start;
+        .text{
+            text-align: center;
+            margin-top: 10px;
+             
+             
+
+        }
+        .social-media{
+            margin: 1px;
+            
+            
+            .img{
+                height: 40px;
+                width: 60px;
+                margin: 10px;
+            }
+        }
+
+    }
+}
