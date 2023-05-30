@@ -6,10 +6,10 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 export const Slider = () => {
 
   const Images=[
-    './Images/coconutWine.jpg',
-    './Images/grapesWine.jpg',
-    './Images/mintWine.jpg',
-    './Images/starFruitWine.jpg'
+    '/Images/coconutWine.jpg',
+    '/Images/grapesWine.jpg',
+    '/Images/mintWine.jpg',
+    '/Images/starFruitWine.jpg'
 
   ];
 

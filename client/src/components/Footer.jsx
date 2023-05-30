@@ -27,10 +27,10 @@ export const Footer = () => {
           <b>Follow Us</b>
         </div>
         <div className="social-media">
-          <img className="img" src='./Images/fb.png' alt='img'></img>
-          <img className="img" src='./Images/Insta.png.webp' alt='img'></img>
-          <img className="img" src='./Images/twitter.png' alt='img'></img>
-          <img className="img" src='./Images/Youtube.png' alt='img'></img>
+          <img className="img" src='/Images/fb.png' alt='img'></img>
+          <img className="img" src='/Images/Insta.png.webp' alt='img'></img>
+          <img className="img" src='/Images/twitter.png' alt='img'></img>
+          <img className="img" src='/Images/Youtube.png' alt='img'></img>
              
         </div>
       </div>

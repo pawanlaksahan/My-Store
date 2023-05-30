@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { List } from '../components/List/List';
 import { useParams } from 'react-router-dom';
+import './Products.scss'
 
 export const Products = () => {
 
@@ -47,7 +48,10 @@ export const Products = () => {
       </div>
       <div className="right">
         <img src='https://images.ctfassets.net/zpx0hfp3jryq/6MzWUx0dmizoxMMF7UoDGW/4b46703a372b4bc831dadb7126ca5848/5f89de02ed0598dcd06a5603_All-about-sweet-wine.jpg?fm=jpg&fl=progressive'/>
-         <List/>
+         <div className="items">
+         <List className="list"/>
+         </div>
+         
       </div>
     </div>
   )
