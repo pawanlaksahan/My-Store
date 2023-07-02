@@ -6,7 +6,7 @@ export const Cart = () => {
     const data =[
         {
             id:1,
-            img:'./Images/redWine.webp',
+            img:'/Images/redWine.webp',
             img2:'./Images/redWine2.png',
             title:'red wine',
             desc:'Wine is an alcoholic drink typically made from fermented grapes.Yeast consumes the sugar in the grapes and converts it to ethanol and carbon dioxide, releasing heat in the process.Different varieties of grapes and strains of yeasts are major factors in different styles of wine.These differences result from the complex interactions between the biochemical development of the grape, the reactions involved in fermentation, the grapes growing environment (terroir), and the wine production process', 
@@ -16,7 +16,7 @@ export const Cart = () => {
         },
         {
             id:2,
-            img:'./Images/mintWine.jpeg',
+            img:'/Images/mintWine.jpeg',
             img2:'./Images/mintWine2.jpg',
             title:'mint wine',
             desc:'Wine is an alcoholic drink typically made from fermented grapes.Yeast consumes the sugar in the grapes and converts it to ethanol and carbon dioxide, releasing heat in the process.Different varieties of grapes and strains of yeasts are major factors in different styles of wine.These differences result from the complex interactions between the biochemical development of the grape, the reactions involved in fermentation, the grapes growing environment (terroir), and the wine production process', 
@@ -28,11 +28,11 @@ export const Cart = () => {
   return (
    
     <div className='cart'>
-       <h1>Product in your cart</h1>
+       <h1>Products in your cart</h1>
        {
          data.map(item=>(
             <div className="item" key={item.id}>
-                <img src={item.img} alt=''/>
+                <img src={item.img} alt='selectedImage'/>
                  <div className="details">
                     <h1>{item.title}</h1>
                     <p>{item.desc?.substring(0,100)}</p>
@@ -47,7 +47,7 @@ export const Cart = () => {
         <span>Rs.2500</span>
        </div>
         <button>PROCEED TO CHECKOUT</button>
-        <button>Reset Cart</button>
+        <div className='reset'>Reset Cart</div>
        
 
     </div>

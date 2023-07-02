@@ -7,14 +7,20 @@ export const Card = ({value}) => {
     <Link className='link' to={`/product/${value.id}`}>
     <div className="card">
       <div className="image">
-      <img className='mainImg' src={value.img} alt='images'/>
-      <img className='secondImg' src={value.img2} alt='img2'/>
+      <img className='mainImg' src={
+        process.env.REACT_APP_UPLOAD_URL + value?.attributes.img.data.attributes.url
+        } 
+        alt='images'/>
+      <img className='secondImg' src={
+        process.env.REACT_APP_UPLOAD_URL + value?.attributes.img2.data.attributes.url
+        } 
+        alt='img2'/>
 
       </div>
-      <h2>{value.title}</h2>
+      <h2>{value?.attributes.title}</h2>
       <div className="prices">
-        <h3>${value.oldPrice}</h3>
-        <h3>${value.price}</h3>
+        <h3>${value?.attributes.oldPrice || value?.attributes.price + 1000}</h3>
+        <h3>${value?.attributes.price}</h3>
       </div>
        
         
