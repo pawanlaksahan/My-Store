@@ -2,12 +2,18 @@ import React, { useState } from 'react'
 import { List } from '../components/List/List';
 import { useParams } from 'react-router-dom';
 import './Products.scss'
+import useFetch from '../components/Hooks/useFetch';
 
 export const Products = () => {
 
  const[filter,setFilter]=useState(0);
- const id= useParams;
- console.log(id)
+ const catId= parseInt(useParams().id);
+ const[sort,setSort]=useState(null);
+
+ const {data,loading,error} = useFetch(`/sub-categories?[filters][categories][Id][$eq]=${catId}`);
+
+ console.log(data)
+  
  
    
 
@@ -16,14 +22,15 @@ export const Products = () => {
       <div className="left">
         <div className="categories">
           <h2>Product Categories</h2>
-          <div className="chk1">
-          <input type='checkbox'/>
-          <label >Local Wines</label>
+          {data?.map((item) =>(
+            <div className="chk1" key={item.id}>
+          <input type='checkbox' id='item.id' value={item.id}/>
+          <label htmlFor='item.id'>{item.attributes.title}</label>
           </div>
-          <div className="chk2">
-          <input type='checkbox'/>
-          <label >Imported Wines</label>
-          </div>
+
+          ))}
+         
+           
            
         </div>
         <div className="price">

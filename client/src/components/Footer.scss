@@ -1,20 +1,27 @@
 .footer{
       display: flex;
       flex-direction: row;
+      gap: 5vw;
       
-      justify-content: space-between;
-       height: 80px;
+       
+       height: 40vh;
        align-items: center;
        background-color:   rgb(236, 197, 122);
-       width: 100vw;
+       width: 100%;
+       
 
     .PaymentMethods{
-          
+        //   background-color: white;
+          margin-left: 1vw;
+          height: 15vh;
 
         .topic{
             text-align: center;
-            text-decoration-thickness: 10px;
+            text-decoration-thickness: 5px;
             margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: white;
             
              
              
@@ -25,9 +32,11 @@
             margin: 3px;
 
             .img{
-                height: 40px;
-                width: 60px;
+                height: 4vh;
+                width: 3vw;
                 margin: 10px;
+                border: 2px solid white;
+                  
                 
             }
             
@@ -40,10 +49,17 @@
         
     }
     .followUs{
-        align-items: flex-start;
+        // align-items: flex-start;
+        // background-color: white;
+        height: 15vh;
         .text{
-            text-align: center;
+            text-decoration-thickness: 5px;
             margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            text-align: center;
+            color: white;
+            
              
              
 
@@ -53,11 +69,34 @@
             
             
             .img{
-                height: 40px;
-                width: 60px;
+                height: 4vh;
+                width: 3vw;
                 margin: 10px;
+                border: 3px solid  rgb(247, 246, 246);
+                border-radius: 50%;
             }
         }
 
     }
+    .customCare{
+        
+        padding-left: 1vw;
+        .header{
+              font-size: 20px;
+              color: white;
+               
+        }
+        ul{
+            padding-left: 0;
+          
+           
+        }
+        ul li{
+            list-style: none;
+            color: white;
+            margin-bottom: .5vh;
+            
+        }
+    }
+    
 }

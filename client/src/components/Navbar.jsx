@@ -28,12 +28,7 @@ export const Navbar = () => {
                 <Link className="link" to={"/Products"}>Products</Link>
 
              </div>
-             <div className="item">
-                <Link className="link" to={"Product/2"}>Product</Link>
-             </div>
-             <div className="item">
-             <Link className="link" to={"Product/3"}>Product</Link>
-             </div>
+              
              <div className="item">
              <Link className="link" to={"Product/4"}>Product</Link>
              </div>
@@ -55,9 +50,7 @@ export const Navbar = () => {
                   <div className="item">
                     contact
                   </div>
-                  <div className="item">
-                    Stores
-                  </div>
+                  
                   <div className="icons">
                   <SearchIcon/>
                   <PersonIcon />

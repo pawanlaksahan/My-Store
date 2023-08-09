@@ -7,7 +7,7 @@ export const Footer = () => {
       <div className='PaymentMethods'>
 
         <div className="topic">
-          <b>Payment Methods</b>
+           Payment Methods 
         </div>
 
         <div className="images">
@@ -19,12 +19,12 @@ export const Footer = () => {
         </div>
         
       </div>
-      <div className='details'>
+      {/* <div className='details'>
         <h1>ALL RIGHT RESERVED</h1>
-      </div>
+      </div> */}
       <div className='followUs'>
         <div className="text">
-          <b>Follow Us</b>
+          Follow Us
         </div>
         <div className="social-media">
           <img className="img" src='/Images/fb.png' alt='img'></img>
@@ -33,6 +33,27 @@ export const Footer = () => {
           <img className="img" src='/Images/Youtube.png' alt='img'></img>
              
         </div>
+      </div>
+      <div className="customCare">
+            <div className="header">Custom Care</div>
+           <ul>
+            <li>Help Center</li>
+            <li>How to Buy</li>
+            <li>Corporate & Bulk Purchasing</li>
+            <li>Returns & Refunds</li>
+            <li>Contact Us</li>
+           </ul>
+      </div>
+      <div className="customCare">
+        <div className="header">S&S</div>
+        <ul>
+            <li>About S&S</li>
+            <li>S&S Stores</li>
+            <li>S&S Donates</li>
+            
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+        </ul>
       </div>
     </div>
   )

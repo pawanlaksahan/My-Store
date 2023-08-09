@@ -3,7 +3,7 @@
         
        height: 80px;
        background-color: rgb(236, 197, 122);
-       width: 100vw;
+       width: 100%;
         
        z-index: 3;
        
@@ -19,6 +19,10 @@
 
         .item{
            display: flex;
+        //    border: 1px solid red;
+        color: white;
+
+           
            
            
         }
@@ -30,6 +34,10 @@
            width: 30%;
            justify-content: space-evenly;
 
+           
+            .link{
+                color: white;
+            }
             
            
         }
@@ -47,6 +55,8 @@
                 align-items: center;
                 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 color: blanchedalmond;
+                 
+                
             }
             
             
@@ -65,7 +75,7 @@
              display: flex;
              gap:15px;
              cursor: pointer;
-             color: rgb(105, 74, 83);
+             color: rgb(245, 245, 245);
 
              .cart-item{
 
