@@ -5,6 +5,8 @@ import AddIcon from '@mui/icons-material/Add';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import CompareIcon from '@mui/icons-material/Compare';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../Redux/cartReducer';
 
 
 export const Product = () => {
@@ -16,6 +18,7 @@ export const Product = () => {
 
   const[Image,setImage]=useState(0);
   const[value,setValue]=useState(0);
+  const dispatch = useDispatch()
 
   return (
     <div className="product">
@@ -53,7 +56,9 @@ export const Product = () => {
             <AddIcon />
           </button>
         </div>
-        <button className="addToCart">
+        <button className="addToCart" onClick={()=>dispatch(addToCart({
+           
+        }))}>
           <div className="icon">
             <ShoppingCartIcon/>
           </div>

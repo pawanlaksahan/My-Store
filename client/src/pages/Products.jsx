@@ -3,12 +3,14 @@ import { List } from '../components/List/List';
 import { useParams } from 'react-router-dom';
 import './Products.scss'
 import useFetch from '../components/Hooks/useFetch';
+ 
 
 export const Products = () => {
 
  const[filter,setFilter]=useState(0);
  const catId= parseInt(useParams().id);
  const[sort,setSort]=useState(null);
+
 
  const {data,loading,error} = useFetch(`/sub-categories?[filters][categories][Id][$eq]=${catId}`);
 
